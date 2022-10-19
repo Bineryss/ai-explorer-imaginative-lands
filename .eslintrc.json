@@ -1,13 +1,26 @@
 {
-    "extends": [
-        "plugin:vue/vue3-essential",
-        "eslint:recommended",
-        "@vue/eslint-config-typescript",
-        "@vue/eslint-config-prettier"
+  "extends": [
+    "plugin:vue/vue3-essential",
+    "eslint:recommended",
+    "@vue/eslint-config-typescript",
+    "@vue/eslint-config-prettier",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error"
     ],
-    "rules": {
-        "vue/no-unused-vars": "error",
-        "semi": ["error", "single"],
-        "quotes": ["error", "double"]
-    }
+    "vue/no-unused-vars": "error",
+    "semi": [
+      "error",
+      "single"
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ]
+  }
 }
