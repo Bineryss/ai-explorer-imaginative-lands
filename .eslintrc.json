@@ -1,0 +1,13 @@
+{
+    "extends": [
+        "plugin:vue/vue3-essential",
+        "eslint:recommended",
+        "@vue/eslint-config-typescript",
+        "@vue/eslint-config-prettier"
+    ],
+    "rules": {
+        "vue/no-unused-vars": "error",
+        "semi": ["error", "single"],
+        "quotes": ["error", "double"]
+    }
+}
