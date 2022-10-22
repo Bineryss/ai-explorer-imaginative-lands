@@ -1,24 +1,27 @@
 <template>
-    <header class="sticky top-0 bg-gray-700 shadow-lg">
-        <div class="container">
-            <div class="flex flex-row items-center gap-4 pt-4 pb-4">
-                <h1 class="flex items-center font-headline text-4xl text-primary">BINERYS</h1>
-            </div>
-            <div class="flex flex-grow flex-row container absolute top-14">
-                <nav class="flex flex-grow flex-row place-content-center gap-4">
-                    <div
-                        class="items-center rounded-full bg-gray-600 px-3 text-2xl text-white"
-                        v-for="navElement in navElements"
-                        :key="navElement.name"
-                    >
-                        <router-link class="flex flex-row" :to="{ name: navElement.link }">
-                            <i v-if="navElement.icon" :class="'m-2' + ' fa-solid fa-' + navElement.icon"></i>
-                            <p class="mx-2 hidden md:flex">{{ navElement.name }}</p>
-                        </router-link>
-                    </div>
-                </nav>
-                <div class='flex md:min-w-[30%]' />
-            </div>
+    <header class="sticky top-0 max-h-11 bg-gray-700 py-1 shadow-lg">
+        <div class="mx-2 flex max-h-11 flex-row items-center gap-4 text-white">
+            <h1 class="font-headline text-4xl text-primary">BINERYS</h1>
+            <nav class="absolut top-0 flex flex-grow flex-row gap-4 pl-5 pt-10">
+                <div
+                    class="rounded-full bg-gray-600 px-3 text-2xl"
+                    v-for="navElement in navElements"
+                    :key="navElement.name"
+                >
+                    <router-link class="flex flex-row items-center" :to="{ name: navElement.link }">
+                        <i v-if="navElement.icon" :class="'m-2' + ' fa-solid fa-' + navElement.icon"></i>
+                        <p class="mx-2 hidden md:flex">{{ navElement.name }}</p>
+                    </router-link>
+                </div>
+            </nav>
+            <label class="relative text-gray-500">
+                <i class="fa-solid fa-magnifying-glass absolute top-1/2 transform -translate-y-1/2 left-3"/>
+                <input class="rounded-full px-2 pl-8" type="text" placeholder="search..." />
+            </label>
+
+            <router-link class="text-2xl" :to="{ name: Routes.USER }">
+                <i class="fa-solid fa-user" />
+            </router-link>
         </div>
     </header>
 </template>
