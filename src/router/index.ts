@@ -13,6 +13,11 @@ const routes: Array<RouteRecordRaw> = [
         name: Routes.ABOUT,
         component: Home,
     },
+    {
+        path: '/user',
+        name: Routes.USER,
+        component: Home,
+    },
 ]
 
 const router = createRouter({

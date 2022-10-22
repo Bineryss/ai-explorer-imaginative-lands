@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-
 module.exports = {
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     theme: {
@@ -8,8 +7,8 @@ module.exports = {
         },
         extend: {
             colors: {
-                primary: '#94A89A',
-                secondary: '#C7AC92',
+                primary: '#50A7D9',
+                secondary: '#8383BE',
             },
             fontFamily: {
                 headline: ['Elianto', 'sans-serif'],

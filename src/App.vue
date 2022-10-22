@@ -1,5 +1,5 @@
 <template>
-    <div class="flex min-h-screen flex-col">
+    <div class="flex min-h-screen flex-col bg-gradient-to-b from-secondary">
         <NavBar />
         <router-view />
     </div>
