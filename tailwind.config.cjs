@@ -3,13 +3,21 @@
 module.exports = {
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     theme: {
+        fontFamily: {
+            'sans': ['Helvetica', 'sans-serif'],
+        },
         extend: {
             colors: {
-                primary: '#8099e9',
-                secondary: '#e99dcb',
+                primary: '#94A89A',
+                secondary: '#C7AC92',
             },
             fontFamily: {
-                headline: ['Elianto'],
+                headline: ['Elianto', 'sans-serif'],
+                roboto: ['Roboto', 'sans-serif'],
+            },
+            container: {
+                padding: '2rem',
+                center: true,
             },
         },
     },
