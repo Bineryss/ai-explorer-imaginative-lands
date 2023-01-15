@@ -8,13 +8,21 @@ module.exports = {
         extend: {
             colors: {
                 neutral: '#fcfefd',
-                primary: '#978b3c',
-                'primary-active': '#b6b989',
+                primary: '#F2CB05',
+                'primary-active': '#AD9244',
                 'text-primary': '#16171b',
+                'sky-blue': '#7BD5FA',
+                'link': '#c0c1c3',
             },
             fontFamily: {
                 headline: ['Elianto', 'sans-serif'],
                 roboto: ['Roboto', 'sans-serif'],
+            },
+            margin: {
+                'nav-bar': '72px',
+            },
+            height: {
+                'nav-bar': '72px',
             },
             container: {
                 padding: '2rem',
