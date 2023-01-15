@@ -7,8 +7,10 @@ module.exports = {
         },
         extend: {
             colors: {
-                primary: '#50A7D9',
-                secondary: '#8383BE',
+                neutral: '#fcfefd',
+                primary: '#978b3c',
+                'primary-active': '#b6b989',
+                'text-primary': '#16171b',
             },
             fontFamily: {
                 headline: ['Elianto', 'sans-serif'],
